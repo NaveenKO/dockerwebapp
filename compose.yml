@@ -12,6 +12,8 @@ services:
    image: naveen3032/repo:app-image
    ports:
      - "1234:8080"
+   depends_on:
+     devopsdb
    deploy:
       replicas: 6
 
