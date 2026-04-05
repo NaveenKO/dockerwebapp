@@ -20,5 +20,5 @@ services:
       replicas: 6
 
 networks:
-  naveen:
+  myproject_naveen:
     driver: bridge
