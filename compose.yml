@@ -16,7 +16,7 @@ services:
      - "1234:8080"
    networks:
      - naveen
-    deploy:
+   deploy:
       replicas: 6
 
 networks:
