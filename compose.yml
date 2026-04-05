@@ -5,8 +5,6 @@ services:
    image: naveen3032/repo:db-image
    ports:
      - "3306:3306"
-   networks:
-     - naveen
    deploy:
      replicas: 3
 
@@ -14,11 +12,6 @@ services:
    image: naveen3032/repo:app-image
    ports:
      - "1234:8080"
-   networks:
-     - naveen
    deploy:
       replicas: 6
 
-networks:
-  myproject_naveen:
-    driver: bridge
