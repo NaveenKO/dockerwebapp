@@ -11,7 +11,7 @@ services:
  application:
    image: naveen3032/repo:app-image
    ports:
-     - ":12348080"
+     - "1234:8080"
    depends_on:
      - "devopsdb"
     deploy:
