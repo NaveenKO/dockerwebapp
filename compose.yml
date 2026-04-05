@@ -4,14 +4,14 @@ services:
  devopsdb:
    image: naveen3032/repo:db-image
    ports:
-     - "3306"
+     - "3306:3306"
    deploy:
      replicas: 3
 
  application:
    image: naveen3032/repo:app-image
    ports:
-     - "8080"
+     - ":12348080"
    depends_on:
      - "devopsdb"
     deploy:
